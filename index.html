@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container" role="application" aria-label="Calculator">
+        <div class="header">
+            <div class="logo" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="2" width="18" height="20" rx="3" ry="3" stroke="#9aa3b2" fill="none"/><rect x="6" y="5" width="12" height="4" rx="1" fill="#7a58ff"/><circle cx="8" cy="12" r="1.2" fill="#e9ecf1"/><circle cx="12" cy="12" r="1.2" fill="#e9ecf1"/><circle cx="16" cy="12" r="1.2" fill="#e9ecf1"/><circle cx="8" cy="16" r="1.2" fill="#e9ecf1"/><circle cx="12" cy="16" r="1.2" fill="#e9ecf1"/><circle cx="16" cy="16" r="1.2" fill="#e9ecf1"/></svg>
+            </div>
+            <h1 class="title">Calculator</h1>
+        </div>
+        <div class="display" aria-live="polite">
+            <div class="expression" id="expression"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="grid">
+            <button class="btn action" data-action="clear">AC</button>
+            <button class="btn action" data-action="delete">DEL</button>
+            <button class="btn op" data-value="%">%</button>
+            <button class="btn op" data-value="/">÷</button>
+
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn op" data-value="*">×</button>
+
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn op" data-value="-">−</button>
+
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn op" data-value="+">+</button>
+
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value="00">00</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn action primary" data-action="equals">=</button>
+
+            <button class="btn op" data-value="(">(</button>
+            <button class="btn op" data-value=")">)</button>
+            <button class="btn op" data-value="^">^</button>
+            <button class="btn op" data-value="!">!</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
